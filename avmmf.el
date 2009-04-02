@@ -1,6 +1,6 @@
 ;;; avmmf.el --- AVM Microformat tools for emacs
-;; Copyright 2008 by Dave Pearson <davep@davep.org>
-;; $Revision: 1.1 $
+;; Copyright 2008,2009 by Dave Pearson <davep@davep.org>
+;; $Revision: 1.2 $
 
 ;; avm.el is free software distributed under the terms of the GNU General
 ;; Public Licence, version 2 or (at your option) any later version. For
@@ -12,7 +12,7 @@
 ;; microformat. For more information on this see:
 ;;
 ;;   <URL:http://www.strudel.org.uk/blog/astro/microformat.shtml>
-;;   <URL:http://www.jodcast.net/avm/index.html>
+;;   <URL:http://www.jodcast.net/lookUP/>
 ;;
 ;; The latest avmmf.el is always available from:
 ;;
@@ -38,7 +38,7 @@
 
 (defun avmmf-make-url (object-name)
   "Make URL for getting AVM microformat code for OBJECT-NAME."
-  (format "http://www.jodcast.net/avm/avm.html?name=%s&resultType=m&display=%s"
+  (format "http://www.jodcast.net/lookUP/avm/?name=%s&display=%s"
           (url-hexify-string object-name)
           avmmf-display))
 
