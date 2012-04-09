@@ -63,4 +63,5 @@
         (insert result)
       (error "AVMMF: Could not get microformat code for '%s'" object-name))))
 
+(provide 'avmmf)
 ;;; avmmf.el ends here
